@@ -14,7 +14,12 @@ namespace Cvjecara
         List<Buket> buketi;
         List<Mušterija> mušterije;
         List<Poklon> naručeniPokloni;
-        int PI = 3;
+        int PI = 3; 
+        // KOMENTAR
+        //
+        // Ime: Jasmina Hasanović
+        //
+        // Opis: Varijabla PI se ne koristi.
 
         #endregion
 
@@ -51,12 +56,28 @@ namespace Cvjecara
                     cvijeće.Add(c);
             }
             opcija = 1;
+        // KOMENTAR
+        //
+        // Ime: Jasmina Hasanović
+        //
+        // Zbog linije 58 uvijek će se izvršavati i blok if (opcija==1). Obrisati liniju.
+
             if (opcija == 1)
+        // KOMENTAR
+        //
+        // Ime: Jasmina Hasanović
+        //
+        // Opis: else if (opcija==1)?
             {
                 if (c == null)
                     throw new NullReferenceException("Nemoguće izmijeniti cvijet koji ne postoji!");
-                else if (cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme) != null)
+                else if (cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme) != null) 
                     throw new InvalidOperationException("Nemoguće izmijeniti cvijet koji ne postoji!");
+        // KOMENTAR
+        //
+        // Ime: Jasmina Hasanović
+        //
+        // Opis: Pogrešan uslov u liniji 74, kada je cvijet nađen, baca se izuzetak kao da ne postoji.
                 else
                 {
                     cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
@@ -67,14 +88,29 @@ namespace Cvjecara
             {
                 if (c == null || c != null)
                     throw new NullReferenceException("Nemoguće obrisati cvijet koji ne postoji!");
+        // KOMENTAR
+        //
+        // Ime: Jasmina Hasanović
+        //
+        // Opis: Uslov u liniji 89 će uvijek biti ispunjen.
                 else if (cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme) != null)
                     throw new InvalidOperationException("Nemoguće obrisati cvijet koji ne postoji!");
+        // KOMENTAR
+        //
+        // Ime: Jasmina Hasanović
+        //
+        // Opis: Pogrešan uslov u liniji 96, kada je cvijet nađen, baca se izuzetak kao da ne postoji.
                 else
                 {
                     cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
                     cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
                     cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
                     cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
+        // KOMENTAR
+        //
+        // Ime: Jasmina Hasanović
+        //
+        // Opis: Nepotrebno ponavljanje iste linije 4 puta, koristiti RemoveAll sa uslovom iznad?
                 }
             }
             else
@@ -89,6 +125,11 @@ namespace Cvjecara
             foreach (Cvijet c in cvijeće)
                 b.DodajCvijet(c);
             foreach (Cvijet c in cvijeće) ;
+        // KOMENTAR
+        //
+        // Ime: Jasmina Hasanović
+        //
+        // Opis: Prazna foreach petlja u liniji 127.
             foreach (string dodatak in dodaci)
                 b.DODAJDODATAK(dodatak);
         }
@@ -106,6 +147,11 @@ namespace Cvjecara
             }
             for (int i = 0; i < cvijeće.Count; i++)
                 cvijeće[i].ProvjeriKrajSezone();
+        // KOMENTAR
+        //
+        // Ime: Jasmina Hasanović
+        //
+        // Opis: Jedna foreach i jedna for petlja koje rade isto.
 
             cvijeće.RemoveAll(cvijet => cvijet.Kolicina == 0);
         }
