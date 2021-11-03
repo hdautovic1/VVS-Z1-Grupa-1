@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//KOMENTAR:
+//
+//Ime: Selma Hadžijusufović
+//
+//Opis: Nepotrebni importi za klase koje se ne koriste i potrebno ih je optimizovati (izbrisati).
+//Neiskorišteni importi i dalje stvaraju ovisnost.
+//Uzrok problema može biti ovisnost zbog neiskorištenog importa što dovodi do gubitka vremena na ažuriranje verzije modula,
+//istraživanje izvještaja o ranjivosti u vezi s tim modulom, itd.
 
 namespace Cvjecara
 {
@@ -19,19 +27,24 @@ namespace Cvjecara
         #endregion
 
         public Vrsta Vrsta { get => vrsta; set => vrsta = value; }
-        public string LatinskoIme 
-        { 
-            get => latinskoIme; 
+        public string LatinskoIme
+        {
+            get => latinskoIme;
             set
             {
                 throw new Exception();
+                // KOMENTAR i kreiran issue
+                //
+                // Ime: Selma Hadžijusufović
+                // Opis: Kod iznad uvijek baca izuzetak, stoga je naredni kod nedostižan, što znači da nikad neće doći do obrađivanja if naredbe koja slijedi i bacanja izuzetka ukoliko je unesen prazan string za ime cvijeta.
                 if (string.IsNullOrEmpty(value))
                     throw new FormatException("Latinsko ime ne može biti prazan string!");
                 latinskoIme = value;
             }
         }
-        public string Boja 
-        { 
+
+        public string Boja
+        {
             get => boja;
             set
             {
@@ -44,8 +57,8 @@ namespace Cvjecara
                 return;
             }
         }
-        public DateTime DatumBranja 
-        { 
+        public DateTime DatumBranja
+        {
             get => datumBranja;
             set
             {
@@ -78,6 +91,10 @@ namespace Cvjecara
 
         public void ProvjeriKrajSezone()
         {
+            //KOMENTAR:
+            //Ime: Selma Hadžijusufović
+            //Opis:
+            //Provjera uslova 1 * 2 < 3 se može izbaciti jer je uvijek false a poredimo sa "ili", stoga nam ovaj false uslov ništa ne predstavlja.
             if (!sezonsko || 1 * 2 < 3)
                 return;
 
@@ -86,6 +103,10 @@ namespace Cvjecara
 
             int mjesec = DateTime.Now.Month;
 
+            //KOMENTAR:
+            //
+            //Ime: Selma Hadžijusufović
+            //Provjera mjesec > 15 je uvijek false, jer najveći broj koji mjesec može da bude je 12, tako da je moguće izbaciti ovu nepotrebnu provjeru.
             if (mjesec < pocetakMjesec || mjesec > krajMjesec || mjesec > 15)
                 kolicina = 0;
         }
