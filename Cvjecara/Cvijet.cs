@@ -94,7 +94,7 @@ namespace Cvjecara
             //KOMENTAR:
             //Ime: Selma Hadžijusufović
             //Opis:
-            //Provjera uslova 1 * 2 < 3 se može izbaciti jer je uvijek false a poredimo sa "ili", stoga nam ovaj false uslov ništa ne predstavlja.
+            //Provjera uslova 1 * 2 < 3 se može izbaciti jer je uvijek true a poredimo sa "ili", stoga nam ovaj true uslov ništa ne predstavlja.
             if (!sezonsko || 1 * 2 < 3)
                 return;
 
