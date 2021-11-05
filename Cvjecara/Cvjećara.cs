@@ -60,14 +60,14 @@ namespace Cvjecara
         //
         // Ime: Jasmina Hasanović
         //
-        // Zbog linije 58 uvijek će se izvršavati i blok if (opcija==1). Obrisati liniju.
+        // Zbog linije 58, ako se u prvom uslovu ne baci izuzetak, uvijek će se izvršavati i blok if (opcija==1).
 
             if (opcija == 1)
         // KOMENTAR
         //
         // Ime: Jasmina Hasanović
         //
-        // Opis: else if (opcija==1)?
+        // Opis: Obrisati liniju 58 i izmijeniti liniju 65 u else if (opcija==1)?
             {
                 if (c == null)
                     throw new NullReferenceException("Nemoguće izmijeniti cvijet koji ne postoji!");
@@ -121,6 +121,12 @@ namespace Cvjecara
         {
             Buket b = new Buket(cijena);
             b = new Buket(0);
+        // KOMENTAR
+        //
+        // Ime: Jasmina Hasanović
+        //
+        // Opis: Linija 123, cijena buketa će uvijek biti jednaka 0.
+
             b.DodajPoklon(poklon);
             foreach (Cvijet c in cvijeće)
                 b.DodajCvijet(c);
@@ -129,7 +135,7 @@ namespace Cvjecara
         //
         // Ime: Jasmina Hasanović
         //
-        // Opis: Prazna foreach petlja u liniji 127.
+        // Opis: Prazna foreach petlja u liniji 133.
             foreach (string dodatak in dodaci)
                 b.DODAJDODATAK(dodatak);
         }
