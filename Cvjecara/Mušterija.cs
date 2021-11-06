@@ -35,7 +35,7 @@ namespace Cvjecara
         //
         //Ime: Hamza Dautović
         //
-        //Opis: Getter uvijek vraća null
+        //Opis: Getter uvijek vraća null,linija 30.
 
         #region Konstruktor
 
@@ -65,7 +65,7 @@ namespace Cvjecara
         //
         //Ime: Hamza Dautović
         //
-        //Opis:Atribut najdraziBuket ostaje neiskorišten, potrebno ga je obrisati.
+        //Opis:Atribut najdraziBuket ostaje neiskorišten, potrebno ga je obrisati, linija 42.
 
         #endregion
 
