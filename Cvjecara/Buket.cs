@@ -17,7 +17,7 @@ namespace Cvjecara
 
         public List<string> Dodaci 
         { 
-            get => new List<string>() { cvijeće.ToString() }; 
+            get => dodaci;
             set
             {
                 foreach (var dodatak in value)
@@ -45,7 +45,11 @@ namespace Cvjecara
 
             Console.Out.WriteLine("Neka bezveze rečenica");
         }
-
+        //KOMENTAR: Ispisivanje u konstruktoru
+        //
+        //Ime: Hamza Dautović
+        //
+        //Opis: Ispisivanje u konstruktoru moze
 
         public void DodajCvijet(Cvijet c)
         {
