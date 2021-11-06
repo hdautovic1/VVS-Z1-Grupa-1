@@ -31,6 +31,11 @@ namespace Cvjecara
         public List<Poklon> KupljeniPokloni { get => kupljeniPokloni; }
 
         #endregion
+        //KOMENTAR: Getter KupljeniBuketi
+        //
+        //Ime: Hamza Dautović
+        //
+        //Opis: Getter uvijek vraća null
 
         #region Konstruktor
 
