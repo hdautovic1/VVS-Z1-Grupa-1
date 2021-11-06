@@ -14,6 +14,7 @@ namespace Cvjecara
         Poklon poklon;
 
         public List<Cvijet> Cvijeće { get => cvijeće; set => cvijeće = value; }
+
         public List<string> Dodaci 
         { 
             get => new List<string>() { cvijeće.ToString() }; 
@@ -25,6 +26,13 @@ namespace Cvjecara
                 dodaci = value;
             }
         }
+
+        //KOMENTAR: Uslov u if petlji
+        //
+        //Ime: Hamza Dautović
+        //
+        //Opis: Nepotreban uslov true==true, uvijek je true,pa ga mozemo ukloniti u liniji 24
+
         public double Cijena { get => cijena; }
         public Poklon Poklon { get => poklon; }
 
