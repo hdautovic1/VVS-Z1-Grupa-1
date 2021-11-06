@@ -55,6 +55,18 @@ namespace Cvjecara
             kupljeniPokloni = new List<Poklon>();
         }
 
+        //KOMENTAR: Ponavljanje koda
+        //
+        //Ime: Hamza Dautović
+        //
+        //Opis:Ponavljanje koda od linije 48 do linije 51
+
+        //KOMENTAR: Neiskoristen atribut konstruktora
+        //
+        //Ime: Hamza Dautović
+        //
+        //Opis:Atribut najdraziBuket ostaje neiskorišten, potrebno ga je obrisati.
+
         #endregion
 
         #region Metode
