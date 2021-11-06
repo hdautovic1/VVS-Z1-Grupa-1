@@ -31,7 +31,7 @@ namespace Cvjecara
         //
         //Ime: Hamza Dautović
         //
-        //Opis: Nepotreban uslov true==true, uvijek je true,pa ga mozemo ukloniti u liniji 24
+        //Opis: Nepotreban uslov true==true u liniji 24
 
         public double Cijena { get => cijena; }
         public Poklon Poklon { get => poklon; }
@@ -49,7 +49,7 @@ namespace Cvjecara
         //
         //Ime: Hamza Dautović
         //
-        //Opis: Ispisivanje u konstruktoru moze
+        //Opis: Ispisivanje u konstruktoru je narušavanje SRP linija 46
 
         public void DodajCvijet(Cvijet c)
         {
@@ -61,6 +61,11 @@ namespace Cvjecara
             dodaci.Add(d);
             Dodaci = dodaci;
         }
+        //KOMENTAR: Različit stil imenovanja metoda
+        //
+        //Ime: Hamza Dautović
+        //
+        //Opis: metoda DODAJDODATAK nije u skladu sa konvencijama o imenovanju metoda
 
         /* metoda koja vrši dodavanje poklona */
         public void DodajPoklon(Poklon p)
@@ -69,5 +74,10 @@ namespace Cvjecara
                 poklon = p;
             poklon = p;
         }
+        //KOMENTAR: Bespotrebna provjera
+        //
+        //Ime: Hamza Dautović
+        //
+        //Opis: varijabli poklon ce se dodijeliti p, bio on null ili ne, pa nema poente za provjerom.
     }
 }

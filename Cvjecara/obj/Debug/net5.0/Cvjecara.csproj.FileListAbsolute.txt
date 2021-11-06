@@ -10,3 +10,15 @@ C:\Users\jasmi\Source\Repos\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\Cvjecara.cs
 C:\Users\jasmi\Source\Repos\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\Cvjecara.dll
 C:\Users\jasmi\Source\Repos\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\ref\Cvjecara.dll
 C:\Users\jasmi\Source\Repos\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\Cvjecara.pdb
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\bin\Debug\net5.0\Cvjecara.deps.json
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\bin\Debug\net5.0\Cvjecara.dll
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\bin\Debug\net5.0\ref\Cvjecara.dll
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\bin\Debug\net5.0\Cvjecara.pdb
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\Cvjecara.csproj.AssemblyReference.cache
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\Cvjecara.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\Cvjecara.AssemblyInfoInputs.cache
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\Cvjecara.AssemblyInfo.cs
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\Cvjecara.csproj.CoreCompileInputs.cache
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\Cvjecara.dll
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\ref\Cvjecara.dll
+C:\Users\XY\Desktop\VVS-Z1-Grupa-1\Cvjecara\obj\Debug\net5.0\Cvjecara.pdb
