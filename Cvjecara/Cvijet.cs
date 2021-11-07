@@ -32,11 +32,6 @@ namespace Cvjecara
             get => latinskoIme;
             set
             {
-                throw new Exception();
-                // KOMENTAR i kreiran issue
-                //
-                // Ime: Selma Hadžijusufović
-                // Opis: Kod iznad uvijek baca izuzetak, stoga je naredni kod nedostižan, što znači da nikad neće doći do obrađivanja if naredbe koja slijedi i bacanja izuzetka ukoliko je unesen prazan string za ime cvijeta.
                 if (string.IsNullOrEmpty(value))
                     throw new FormatException("Latinsko ime ne može biti prazan string!");
                 latinskoIme = value;
@@ -55,10 +50,7 @@ namespace Cvjecara
                     throw new FormatException("Unijeli ste nepostojeću boju!");
                 boja = value;
 
-                //KOMENTAR:
-                //Ime: Selma Hadžijusufović
-                //Opis: Suvišna return naredba.
-                return;
+            
             }
         }
         public DateTime DatumBranja
@@ -95,11 +87,8 @@ namespace Cvjecara
 
         public void ProvjeriKrajSezone()
         {
-            //KOMENTAR:
-            //Ime: Selma Hadžijusufović
-            //Opis:
-            //Provjera uslova 1 * 2 < 3 se može izbaciti jer je uvijek true a poredimo sa "ili", stoga nam ovaj true uslov ništa ne predstavlja.
-            if (!sezonsko || 1 * 2 < 3)
+           
+            if (!sezonsko)
                 return;
 
             int pocetakMjesec = 3,
@@ -107,11 +96,8 @@ namespace Cvjecara
 
             int mjesec = DateTime.Now.Month;
 
-            //KOMENTAR:
-            //
-            //Ime: Selma Hadžijusufović
-            //Provjera mjesec > 15 je uvijek false, jer najveći broj koji mjesec može da bude je 12, tako da je moguće izbaciti ovu nepotrebnu provjeru.
-            if (mjesec < pocetakMjesec || mjesec > krajMjesec || mjesec > 15)
+         
+            if (mjesec < pocetakMjesec || mjesec > krajMjesec)
                 kolicina = 0;
         }
 

@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jasmi\\.nuget\\packages\\": {}
+    "C:\\Users\\Selma\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jasmi\\Source\\Repos\\VVS-Z1-Grupa-1-final\\Cvjecara\\Cvjecara.csproj",
+      "projectUniqueName": "C:\\Users\\Selma\\Documents\\GitHub\\VVS-Z1-Grupa-1\\Cvjecara\\Cvjecara.csproj",
       "projectName": "Cvjecara",
-      "projectPath": "C:\\Users\\jasmi\\Source\\Repos\\VVS-Z1-Grupa-1-final\\Cvjecara\\Cvjecara.csproj",
-      "packagesPath": "C:\\Users\\jasmi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jasmi\\Source\\Repos\\VVS-Z1-Grupa-1-final\\Cvjecara\\obj\\",
+      "projectPath": "C:\\Users\\Selma\\Documents\\GitHub\\VVS-Z1-Grupa-1\\Cvjecara\\Cvjecara.csproj",
+      "packagesPath": "C:\\Users\\Selma\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Selma\\Documents\\GitHub\\VVS-Z1-Grupa-1\\Cvjecara\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jasmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Selma\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.208\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
