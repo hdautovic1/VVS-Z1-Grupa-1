@@ -22,17 +22,11 @@ namespace Cvjecara
             set
             {
                 foreach (var dodatak in value)
-                    if (dodatak != "Lišće" && dodatak != "Slama" && dodatak != "Trava" && true == true)
+                    if (dodatak != "Lišće" && dodatak != "Slama" && dodatak != "Trava")
                         throw new NotSupportedException("Dodaci koje ste unijeli nisu podržani!");
                 dodaci = value;
             }
         }
-
-        //KOMENTAR: Uslov u if petlji
-        //
-        //Ime: Hamza Dautović
-        //
-        //Opis: Nepotreban uslov true==true  linija 24
 
         public double Cijena { get => cijena; }
         public Poklon Poklon { get => poklon; }
