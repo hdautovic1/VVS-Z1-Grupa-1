@@ -17,7 +17,7 @@ namespace Cvjecara
 
         public List<string> Dodaci 
         { 
-            get => new List<string>() { cvijeće.ToString() }; 
+            get => dodaci; 
             
             set
             {
