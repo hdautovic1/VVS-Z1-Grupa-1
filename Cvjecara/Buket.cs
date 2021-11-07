@@ -37,15 +37,8 @@ namespace Cvjecara
             cvijeće = new List<Cvijet>();
             dodaci = new List<string>();
             cijena = c;
-
-            Console.Out.WriteLine("Neka bezveze rečenica");
-        }
-        //KOMENTAR: Ispisivanje u konstruktoru
-        //
-        //Ime: Hamza Dautović
-        //
-        //Opis: Ispisivanje u konstruktoru je narušavanje SRP, linija 46.
-
+   }
+       
         public void DodajCvijet(Cvijet c)
         {
             cvijeće.Add(c);
