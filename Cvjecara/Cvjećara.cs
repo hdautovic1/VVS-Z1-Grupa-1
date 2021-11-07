@@ -110,7 +110,9 @@ namespace Cvjecara
         //
         // Ime: Jasmina Hasanović
         //
-        // Opis: Nepotrebno ponavljanje iste linije 4 puta, koristiti RemoveAll sa uslovom iznad?
+        // Opis: Obzirom da je dozvoljeno dodavanje cvijeta sa već postojećim latinskim imenom,
+        // neće se obrisati svi sa istim latinskim imenom ukoliko ih je više od 4.
+        // Zamijeniti 4 linije iznad sa RemoveAll (napraviti dodatne provjere da bismo bili sigurni da brišemo cvijet koji želimo).
                 }
             }
             else
