@@ -54,6 +54,10 @@ namespace Cvjecara
                 if (!boje.Contains(value))
                     throw new FormatException("Unijeli ste nepostojeću boju!");
                 boja = value;
+
+                //KOMENTAR:
+                //Ime: Selma Hadžijusufović
+                //Opis: Suvišna return naredba.
                 return;
             }
         }
