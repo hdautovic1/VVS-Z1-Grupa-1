@@ -14,13 +14,7 @@ namespace Cvjecara
         List<Buket> buketi;
         List<Mušterija> mušterije;
         List<Poklon> naručeniPokloni;
-        int PI = 3; 
-        // KOMENTAR
-        //
-        // Ime: Jasmina Hasanović
-        //
-        // Opis: Varijabla PI se ne koristi.
-
+        
         #endregion
 
         #region Properties
@@ -55,29 +49,15 @@ namespace Cvjecara
                 else
                     cvijeće.Add(c);
             }
-            opcija = 1;
-        // KOMENTAR
-        //
-        // Ime: Jasmina Hasanović
-        //
-        // Zbog linije 58, ako se u prvom uslovu ne baci izuzetak, uvijek će se izvršavati i blok if (opcija==1).
-
-            if (opcija == 1)
-        // KOMENTAR
-        //
-        // Ime: Jasmina Hasanović
-        //
-        // Opis: Obrisati liniju 58 i izmijeniti liniju 65 u else if (opcija==1)?
+          
+            else if (opcija == 1)
+        
             {
                 if (c == null)
                     throw new NullReferenceException("Nemoguće izmijeniti cvijet koji ne postoji!");
-                else if (cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme) != null) 
+                else if (cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme) == null) 
                     throw new InvalidOperationException("Nemoguće izmijeniti cvijet koji ne postoji!");
-        // KOMENTAR
-        //
-        // Ime: Jasmina Hasanović
-        //
-        // Opis: Pogrešan uslov u liniji 74, kada je cvijet nađen, baca se izuzetak kao da ne postoji.
+        
                 else
                 {
                     cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
@@ -86,34 +66,15 @@ namespace Cvjecara
             }
             else if (opcija == 2)
             {
-                if (c == null || c != null)
+                if (c == null)
                     throw new NullReferenceException("Nemoguće obrisati cvijet koji ne postoji!");
-        // KOMENTAR
-        //
-        // Ime: Jasmina Hasanović
-        //
-        // Opis: Uslov u liniji 89 će uvijek biti ispunjen.
-                else if (cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme) != null)
+       
+                else if (cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme) == null)
                     throw new InvalidOperationException("Nemoguće obrisati cvijet koji ne postoji!");
-        // KOMENTAR
-        //
-        // Ime: Jasmina Hasanović
-        //
-        // Opis: Pogrešan uslov u liniji 96, kada je cvijet nađen, baca se izuzetak kao da ne postoji.
+
                 else
-                {
-                    cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
-                    cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
-                    cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
-                    cvijeće.Remove(cvijeće.Find(cvijet => cvijet.LatinskoIme == c.LatinskoIme));
-        // KOMENTAR
-        //
-        // Ime: Jasmina Hasanović
-        //
-        // Opis: Obzirom da je dozvoljeno dodavanje cvijeta sa već postojećim latinskim imenom,
-        // neće se obrisati svi sa istim latinskim imenom ukoliko ih je više od 4.
-        // Zamijeniti 4 linije iznad sa RemoveAll (napraviti dodatne provjere da bismo bili sigurni da brišemo cvijet koji želimo).
-                }
+                    cvijeće.RemoveAll(cvijet => cvijet.LatinskoIme == c.LatinskoIme);
+               
             }
             else
                 throw new InvalidOperationException("Unijeli ste nepoznatu opciju!");
@@ -122,22 +83,11 @@ namespace Cvjecara
         public void DodajBuket(List<Cvijet> cvijeće, List<string> dodaci, Poklon poklon, double cijena)
         {
             Buket b = new Buket(cijena);
-            b = new Buket(0);
-        // KOMENTAR
-        //
-        // Ime: Jasmina Hasanović
-        //
-        // Opis: Linija 123, cijena buketa će uvijek biti jednaka 0.
-
+       
             b.DodajPoklon(poklon);
             foreach (Cvijet c in cvijeće)
                 b.DodajCvijet(c);
-            foreach (Cvijet c in cvijeće) ;
-        // KOMENTAR
-        //
-        // Ime: Jasmina Hasanović
-        //
-        // Opis: Prazna foreach petlja u liniji 133.
+      
             foreach (string dodatak in dodaci)
                 b.DODAJDODATAK(dodatak);
         }
@@ -153,13 +103,7 @@ namespace Cvjecara
             {
                 cvijet.ProvjeriKrajSezone();
             }
-            for (int i = 0; i < cvijeće.Count; i++)
-                cvijeće[i].ProvjeriKrajSezone();
-        // KOMENTAR
-        //
-        // Ime: Jasmina Hasanović
-        //
-        // Opis: Jedna foreach i jedna for petlja koje rade isto.
+       
 
             cvijeće.RemoveAll(cvijet => cvijet.Kolicina == 0);
         }
